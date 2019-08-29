@@ -1,5 +1,5 @@
 # usb2most
-USB to MOST adapter to translate audio from a USB(UAC1) to MOST(Media Oriented Systems Transport) bus
+USB to MOST adapter to translate audio from a USB([UAC1](https://en.wikipedia.org/wiki/USB#Audio_streaming)) to MOST([Media Oriented Systems Transport](https://en.wikipedia.org/wiki/MOST_Bus)) bus
 
 Interfaces:
 - 8 audio channels(16bit/48kHz) over MOST bus
