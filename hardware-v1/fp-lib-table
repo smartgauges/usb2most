@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name usb2most)(type KiCad)(uri ${KIPRJMOD}/usb2most.pretty)(options "")(descr ""))
+)
