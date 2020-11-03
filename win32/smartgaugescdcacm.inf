@@ -1,0 +1,52 @@
+[Strings]
+DriverPackageDisplayName="SmartGauges CDC-ACM driver"
+ManufacturerName="SmartGauges"
+ServiceName="Microsoft USB Serial Driver"
+DevName="Usb2Most"
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+DriverVer=11/01/2020,1.0.0.0
+CatalogFile=smartgaugescdc.cat
+DriverPackageDisplayName=%DriverPackageDisplayName%
+
+[Manufacturer]
+%ManufacturerName%=DeviceList, NTx86, NTamd64, NTarm
+
+[DeviceList.NTx86]
+%DevName%=DriverInstall, USB\VID_1219&PID_ABAD&MI_00
+
+[DeviceList.NTamd64]
+%DevName%=DriverInstall, USB\VID_1219&PID_ABAD&MI_00
+
+[DeviceList.NTarm]
+%DevName%=DriverInstall, USB\VID_1219&PID_ABAD&MI_00
+
+[DestinationDirs]
+DefaultDestDir=12
+FakeModemCopyFileSection=12
+
+[DriverInstall]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=DriverInstall.AddReg
+
+[DriverInstall.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[DriverInstall.Services]
+AddService=usbser, 0x2, DriverService
+
+[DriverService]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\usbser.sys
+LoadOrderGroup=Base
+
