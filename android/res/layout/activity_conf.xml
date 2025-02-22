@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="16dp"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Buttons settings"
+		android:textSize="18sp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/conf_music"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_music"
+			android:text="Click to select app (MUSIC)" />
+
+		<Space
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<Button
+			android:id="@+id/conf_clear_music"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_clear_music"
+			android:text="Clear" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/conf_nav"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_nav"
+			android:text="Click to select app (NAV)" />
+
+		<Space
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<Button
+			android:id="@+id/conf_clear_nav"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_clear_nav"
+			android:text="Clear" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/conf_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_phone"
+			android:text="Click to select app (PHONE)" />
+
+		<Space
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<Button
+			android:id="@+id/conf_clear_phone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_clear_phone"
+			android:text="Clear" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/conf_media"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_media"
+			android:text="Click to select app (MEDIA)" />
+		<Space
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<Button
+			android:id="@+id/conf_clear_media"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="click_clear_media"
+			android:text="Clear" />
+
+	</LinearLayout>
+
+	<Switch
+		android:id="@+id/conf_switch_apps"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Show system apps" />
+
+	<Switch
+		android:id="@+id/conf_switch_doors"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Show open doors" />
+
+	<Switch
+		android:id="@+id/conf_switch_radar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Show radar sensors" />
+
+</LinearLayout>

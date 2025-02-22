@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:layout_margin="5dp"
+	android:background="@drawable/shape"
+	android:layout_alignParentTop="true"
+	android:id="@+id/ll_widget"
+	android:gravity="center_vertical|center">
+
+	<TextView
+		android:id="@+id/tv_src"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="@string/widget_src"
+		android:textColor="#ffffff"
+		android:textSize="22sp"
+		android:layout_weight="1">
+	</TextView>
+
+	<TextView
+		android:id="@+id/tv_info"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="@string/widget_info"
+		android:textColor="#ffffff"
+		android:textSize="22sp"
+		android:layout_weight="1">
+	</TextView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/setup"
+				android:id="@+id/imageView_conf"
+				android:layout_weight="1"
+				android:layout_gravity="left|center" />
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/level"
+				android:id="@+id/imageView_level"
+				android:layout_weight="1"
+				android:layout_gravity="center|right" />
+
+        </FrameLayout>
+
+		<TextView
+			android:id="@+id/tv_vol"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:gravity="left|center"
+			android:text="@string/widget_vol"
+			android:textColor="#ffffff"
+			android:textSize="22sp"
+			android:layout_weight="1">
+		</TextView>
+
+	</LinearLayout>
+
+</LinearLayout>
